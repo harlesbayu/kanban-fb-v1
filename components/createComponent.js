@@ -3,7 +3,7 @@ const database = firebase.database();
 Vue.component('create-component', {
   template: `
     <v-container>
-      <v-layout style="position: fixed; bottom: 30px; right: 30px;">
+      <v-layout style="position: fixed; bottom: 30px; right: 30px; z-index:1;">
         <v-btn v-on:click="activatorcreate" color="#E91E63" dark>+</v-btn>
         <v-dialog v-model="dialog" persistent max-width="400px">
 
